@@ -1,11 +1,12 @@
 <?php
+// connect in data_base
     function connectDB(){
         $link = mysqli_connect('reviews', 'root', 'root', 'test') or die
         (mysqli_error($link));
         mysqli_query($link, "SET NAMES 'utf-8'");
         return $link;
     }
-
+// insert reviews in the date_base
     function createReviews($name, $text){
         $link = connectDB();
         $data = date('Y-m-d H:i:s');
@@ -13,7 +14,7 @@
         return mysqli_query($link, "INSERT INTO reviews_db SET name=\"$name\", massage=\"$text\", data = \"$data\"");
     }
 
-    // функция для создания самих статей
+// function for view reviews
 
     function getReviews(){
         $link = connectDB();
