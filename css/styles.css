@@ -1,0 +1,58 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: "Arial Black";
+}
+
+body{
+	background-color: #2c898f;
+}
+#wrapper{
+
+	background-color: #ccccff;
+	width: 60%;
+	margin: 0px auto;
+	padding: 10px;
+	
+	text-align: justify;
+}
+#wrapper > div{
+	margin-bottom: 15px;
+}
+#user{
+	margin-left: 5%;
+}
+#wrapper p{
+	margin-bottom: 5px;
+
+}
+#message{
+	margin: auto;
+	width: 80%;
+}
+h1 {
+	color: #9d648d;
+	text-align: center;
+}
+
+.date{
+	font-weight: bold;
+}
+.name{
+	width: 80%;
+	font-size: 12pt;
+}
+form{
+	margin: auto;
+	width: 80%;
+}
+
+
+textarea.form-control{
+
+	padding: 5px 10px;
+	min-height: 200px;
+	resize: vertical;
+	text-align: justify;
+	
+}
